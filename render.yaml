@@ -8,3 +8,12 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
+      - key: TF_CPP_MIN_LOG_LEVEL
+        value: "2"
+      - key: TF_NUM_INTRAOP_THREADS
+        value: "1"
+      - key: TF_NUM_INTEROP_THREADS
+        value: "1"
+      - key: TF_ENABLE_ONEDNN_OPTS
+        value: "0"
+
